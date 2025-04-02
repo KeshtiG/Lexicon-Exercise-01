@@ -8,9 +8,9 @@ namespace Lexicon_Exercise_01
 {
     public class Employee
     {
-        public string firstName;
-        public string lastName;
-        public string salary;
+        private string firstName;
+        private string lastName;
+        private string salary;
 
         public Employee(string firstName, string lastName, string salary)
         {
@@ -22,6 +22,11 @@ namespace Lexicon_Exercise_01
         public void showEmployeeInfo()
         {
             Console.WriteLine($"Name: {firstName} {lastName}, Salary: {salary}");
+        }
+
+        public string GetFirstName()
+        {
+            return firstName;
         }
     }
 }
